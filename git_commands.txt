@@ -1,0 +1,23 @@
+git init
+git .
+git commit -m "first commit"
+# send source to remote
+git remote add https://github.com/kakawkaization/test2
+git push origin master
+
+# get source to local
+git pull https://github.com/kakawkaization/test2
+
+# clone source from remote
+git clone https://github.com/kakawkaization/test2
+
+# delete file
+rm file.txt
+git rm --cached file.txt
+git push origin master
+
+# back to commit
+git reset --hard https://github.com/kakawkaization/test2
+
+# show commits
+git log
