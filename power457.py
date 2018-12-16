@@ -1,10 +1,8 @@
-c = 2
-d = 1
-L = []
+arr = []
+num = 2
 
 for i in range(5):
-    if c ** 2 == L[i]:
-        print(i)
-    else:
-        L.append(c ** 2)
-        continue
+    arr.append(num)
+    num  = num * 2
+
+print(arr)
