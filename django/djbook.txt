@@ -1,3 +1,1 @@
-activating models
-https://djbook.ru/rel1.9/intro/tutorial02.html
-https://docs.djangoproject.com/en/2.1/intro/tutorial02/
+https://djbook.ru/rel1.9/intro/tutorial03.html
