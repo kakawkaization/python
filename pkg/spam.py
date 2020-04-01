@@ -1,1 +1,2 @@
-from . import string
+import string
+print(string)
