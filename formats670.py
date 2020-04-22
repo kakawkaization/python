@@ -28,3 +28,13 @@ if __name__ == '__main__':
         tests += 12.34, 12.344, 12.345, 12.346
         tests += 2 ** 32, (2 ** 32 + .345)
         tests += 1.2345, 1.2, 0.2345
+        tests += -(2 ** 32), -(2 ** 32 + .2345)
+        tests += (2 * 100), -(2 ** 100)
+        for test in tests:
+            print('%s [%s]' % (money(test, 17), test))
+
+    import sys
+    if len(sys.argv) == 1:
+        selftest()
+    else:
+        print(money(float(sys.argv[1], int(sys.argv[2]))) 
