@@ -20,4 +20,13 @@ def listing(module, verbose=True):
             print("built-in name")
         else:
             print(getattr(module, attr))
-            count = count + 1
+        count = count + 1
+
+        if verbose:
+            print(sepline)
+            print(modulw.__name__, 'has %d names' % count)
+            print(sepline)
+
+        if __name__ == '__main__':
+           import mydir675
+           listing(mydir675)
