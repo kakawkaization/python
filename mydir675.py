@@ -28,5 +28,5 @@ def listing(module, verbose=True):
             print(sepline)
 
         if __name__ == '__main__':
-           import mydir675
-           listing(mydir675)
+            import mydir675
+            listing(mydir675)
