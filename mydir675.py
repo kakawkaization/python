@@ -27,6 +27,6 @@ def listing(module, verbose=True):
             print(module.__name__, 'has %d names' % count)
             print(sepline)
 
-        if __name__ == '__main__':
-            import mydir675
-            listing(mydir675)
+if __name__ == '__main__':
+    import mydir675
+    listing(mydir675)
