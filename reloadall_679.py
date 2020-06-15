@@ -16,3 +16,9 @@ def transitive_reload(module, visited):
         for attrobj in module.__dict__.values():
             if type(attrobj) == types.ModuleType:
                 transitive_reload(attrobj, visited)
+
+def reload_all():
+    visited = {}
+    for arg in args:
+        if type(arg) == types.ModuleType
+        transitive_reload(arg, visited)
