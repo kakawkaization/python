@@ -6,10 +6,10 @@ import types
 from imp import reload
 
 def status(module):
-    print('reloading' + module.__name__)
+    print('reloading ' + module.__name__)
 
 def transitive_reload(module, visited):
-    if not module visited:
+    if not module in visited:
         status(module)
         reload(module)
         visited[module] = None
@@ -17,8 +17,12 @@ def transitive_reload(module, visited):
             if type(attrobj) == types.ModuleType:
                 transitive_reload(attrobj, visited)
 
-def reload_all():
+def reload_all(*args):
     visited = {}
     for arg in args:
-        if type(arg) == types.ModuleType
-        transitive_reload(arg, visited)
+        if type(arg) == types.ModuleType:
+            transitive_reload(arg, visited)
+
+if __name__ == '__main__':
+    import reloadall_679
+    reload_all(reloadall_679)
