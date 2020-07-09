@@ -11,3 +11,6 @@ def countChars(name):
 def test(name):
    countLines(name)
    countChars(name)
+
+if __name__ == '__main__':
+    test(name)
