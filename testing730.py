@@ -9,3 +9,6 @@ if __name__ == '__main__':
     sue = Person('Sue Jones', job='dev', pay=100000)
     print(bob.name, bob.pay)
     print(sue.name, sue.pay)
+    print(bob.name.split()[-1])
+    sue.pay *= 1.10
+    print(sue.pay)
