@@ -37,3 +37,11 @@ if __name__ == '__main__':
     for object in (bob, sue, tom):
         object.giveRaise(.10)
         print(object)
+
+    class Department:
+        def __init__(self, *args):
+            self.members = list(args)
+        def addMember(self, person):
+            self.members.append(person)
+        def giveRaises(self, percent):
+            for person in self.members:
