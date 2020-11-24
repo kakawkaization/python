@@ -45,3 +45,12 @@ if __name__ == '__main__':
             self.members.append(person)
         def giveRaises(self, percent):
             for person in self.members:
+                person.giveRaise(percent)
+        def showAll(self):
+            for person in self.members:
+                print(person)
+
+development = Department(bob, sue)
+development.addMember(tom)
+development.giveRaises(.10)
+development.showAll()
