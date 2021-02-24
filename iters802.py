@@ -4,7 +4,7 @@ class Squares:
         self.stop = stop
     def __iter__(self):
         return self
-    def __next_(self):
+    def __next__(self):
         if self.value == self.stop:
             raise StopIteration
         self.value += 1
