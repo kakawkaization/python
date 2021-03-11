@@ -9,3 +9,9 @@ class SkipIterator:
             item = self.wrapped[self.offset]
             self.offset += 2
             return item
+
+class SkipObject:
+    def __init__(self, wrapped):
+        self.wrapped = wrapped
+    def __iter__(self):
+        return SkipIterator(self.wrapped)
